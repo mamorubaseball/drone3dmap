@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己分析ツール</title>
+</head>
+<body>
+    <p>3D地図</p>
+    <div class="button-panel">
+    <form method="post">
+        {% csrf_token %}
+    <button type="submit" name="start_button">飛行開始</button>
+    <button type="submit" name="finish_button">飛行終了</button>
+  </form>
+</div>
+</body>
+</html>
+
+
+<style>
+.button-panel {
+  margin: 2em 0 0;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #f16272;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+</style>
